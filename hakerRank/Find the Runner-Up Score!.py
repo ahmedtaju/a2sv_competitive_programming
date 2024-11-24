@@ -1,6 +1,6 @@
 if __name__ == '__main__':
-    n = int(input())
+    lengthOfNumbers = int(input())
     arr = map(int, input().split())
-    a = set(arr)
-    b = sorted(a)
-    print(b[-2])
+    hashSet = set(arr)
+    sortedHashSet = sorted(hashSet)
+    print(sortedHashSet[-2])
