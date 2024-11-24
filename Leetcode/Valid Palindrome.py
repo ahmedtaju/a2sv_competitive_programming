@@ -1,18 +1,18 @@
 import re
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        b=s.lower()
-        l=0
-        r=len(b)-1
-        while l<r:
-            if not b[l].isalnum():
-                l+=1
-            if not b[r].isalnum():
-                r-=1
-            if b[r].isalnum() and b[l].isalnum():
-                if b[l]!=b[r]:
+        lowerString = s.lower()
+        left = 0
+        right =l en(b)-1
+        while left < right:
+            if not lowerString[left].isalnum():
+                left += 1
+            if not lowerString[right].isalnum():
+                right -= 1
+            if lowerString[right].isalnum() and lowerString[left].isalnum():
+                if lowerString[left] != lowerString[right]:
                     return False
-                r -=1
-                l+=1
+                right -=1
+                left += 1
         return True
         
